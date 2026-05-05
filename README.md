@@ -1,4 +1,4 @@
-# Simulation Engine Test Cases
+﻿# Simulation Engine Test Cases
 
 Validation test cases for the TAKAHUMAN simulation engine, organized by indication and drug.
 
@@ -9,19 +9,20 @@ test_cases/
   <INDICATION>/
     <drug_name>/
       <author_year>/
-        sunitinib_pkpd.py   # Simulation script
-        README.md            # Model description & validation
+        sunitinib_pkpd.py       # Simulation script
+        README.md               # Model description and validation
         results/
-          figures/           # Output plots
-          *.csv              # Simulation result tables
+          figures/              # Output plots
+          *.csv                 # Simulation result tables
 ```
 
 ## Indications
 
 | Indication | Drug | Reference | Status |
 |---|---|---|---|
-| RCC | Sunitinib | Khosravan 2016 | ✅ Complete |
-| RCC | Sunitinib | (next model) | 🔄 Planned |
+| RCC | Sunitinib | Khosravan 2016 | Complete |
+| RCC | Sunitinib | Diekstra 2017 | Complete |
+| RCC | Axitinib | Schindler 2017 | Complete |
 
 ## Adding a New Test Case
 
@@ -32,5 +33,7 @@ test_cases/
 
 ## Current Coverage
 
-- **RCC (Renal Cell Carcinoma):** 1 model
-  - Sunitinib PK/PD — Khosravan et al., *Clin Pharmacokinet* 2016;55:1251–1269
+- RCC (Renal Cell Carcinoma): 3 models
+  - Sunitinib PK/PD - Khosravan et al., Clin Pharmacokinet 2016;55:1251-1269
+  - Sunitinib PK/PD - Diekstra et al. 2017
+  - Axitinib PK/PD chain - Schindler et al. 2017
