@@ -24,6 +24,7 @@ test_cases/
 | RCC | Sunitinib | Diekstra 2017 | Complete |
 | RCC | Axitinib | Schindler 2017 | Complete |
 | RCC | Everolimus | Pawaskar 2013 + RECORD-1 | Complete |
+| RCC | Pazopanib | Tan 2025 | Complete |
 
 ## Adding a New Test Case
 
@@ -34,8 +35,9 @@ test_cases/
 
 ## Current Coverage
 
-- RCC (Renal Cell Carcinoma): 4 models
+- RCC (Renal Cell Carcinoma): 5 models
   - Sunitinib PK/PD - Khosravan et al., Clin Pharmacokinet 2016;55:1251-1269
   - Sunitinib PK/PD - Diekstra et al. 2017
   - Axitinib PK/PD chain - Schindler et al. 2017
   - Everolimus PBPK/PD chain - Pawaskar et al. 2013 with RECORD-1 linkage
+  - Pazopanib PK/PD chain - Tan et al. 2025 (real-world mRCC and STS)
