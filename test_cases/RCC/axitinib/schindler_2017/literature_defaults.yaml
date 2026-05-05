@@ -1,0 +1,76 @@
+# Axitinib mRCC — numeric defaults for microservice.axitinib.model
+# PK: Rini et al. 2013 (values as in agent spec); PD/TGI/OS: Schindler et al. 2017
+
+project:
+  drug: Axitinib
+  indication: mRCC
+
+pharmacokinetics:
+  CL_L_per_h: 14.6
+  Vc_L: 47.3
+  Q_L_per_h: 4.00
+  Vp_L: 393.0
+  ka_fed_per_h: 0.482
+  ka_fasted_per_h: 1.43   # or fed * 1.97
+  tlag_h: 0.454
+  F_fed_IV: 0.457
+  F_fasted_IV: 0.608     # fed * (1 + 0.330)
+  F_XLI: 0.402
+  residual_prop_oral_pct: 58.2
+
+covariates:
+  CL_age_over_60_factor: 0.787   # ~ -21.3% linear
+  CL_japanese_factor: 0.751     # ~ -24.9%
+  CL_smoker_factor: 2.02        # +102% (use with caution)
+  Vc_weight_ref_kg: 74.0
+  Vc_weight_exponent: 0.778
+
+biomarkers:
+  VEGF:
+    baseline_pg_ml: 65.0
+    MRT_days: 0.722
+    AUC50_ug_h_per_L: 354.0
+    Imax: 1.0
+    gamma: 1.0
+    disease_progression_per_year: 0.65
+  sVEGFR1:
+    baseline_pg_ml: 83.5
+    MRT_days: 0.624
+    AUC50_ug_h_per_L: 1380.0
+    Imax: 1.0
+    gamma: 1.0
+  sVEGFR2:
+    baseline_pg_ml: 8850.0
+    MRT_days: 19.7
+    AUC50_ug_h_per_L: 717.0
+    Imax: 1.0
+    gamma: 0.733
+  sVEGFR3:
+    baseline_pg_ml: 19500.0
+    MRT_days: 5.76
+    AUC50_ug_h_per_L: 717.0   # shared with sVEGFR2
+    Imax: 1.0
+    gamma: 1.0
+
+diastolic_bp:
+  baseline_mmHg: 78.9
+  MRT_days: 4.92
+  Emax: 0.197
+  S0: 0.00127   # empirical scaling vs AUC driver (µg·h/L)
+
+tumor_sld:
+  KG_per_week: 0.00361
+  ksVEGFR3_per_week: -0.174
+  lambda_per_week: 0.101
+  baseline_SLD_mm: 65.0
+
+overall_survival:
+  beta0: 7.09
+  gamma_shape: 0.298
+  beta_SLD_per_mm: 0.0115
+
+regimen:
+  dose_mg_per_administration: 5.0
+  interval_h: 12.0           # BID
+  fed_state: fasted        # ka/F branch: fed | fasted | XLI
+  formulation: IV_form     # IV_form | XLI
