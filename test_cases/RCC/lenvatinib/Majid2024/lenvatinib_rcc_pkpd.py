@@ -564,7 +564,7 @@ def main() -> None:
     summ = validation_summary(df)
     fig4 = paper_figure4_timing_metrics(df)
     lines = [
-        "Majid et al. 2024 CPT PSP 2024;13(6):954-969 — validation vs Figure 4 narrative",
+        "Majid et al. 2024 CPT PSP 2024;13(6):954-969 - validation vs Figure 4 narrative",
         "",
         "A) Primary exported run (Figure 4 reference patient: default BW 75.1 kg, baseline tumor 59.5 mm)",
         f"    CLI: BW={args.bw_kg} kg, baseline tumor={args.y0_tumor_mm} mm, TGI AUC window={args.tumor_auc_window_weeks} wk",
@@ -578,7 +578,7 @@ def main() -> None:
         f"    Ang-2 week <=95% depth vs wk-10 nadir: {fig4['ang2_nadir95_week']:.2f} wk (proxy ~4 wk)",
         f"    Tie-2 week <=95% depth vs wk-12 nadir: {fig4['tie2_nadir95_week']:.2f} wk (proxy ~8 wk)",
         "",
-        "C) >35% shrink caption (73.2 kg, 70.2 mm baseline, 24 mg QD) — dedicated check",
+        "C) >35% shrink caption (73.2 kg, 70.2 mm baseline, 24 mg QD) - dedicated check",
     ]
     df_shrink = run_scenario(
         weeks=float(args.weeks),
