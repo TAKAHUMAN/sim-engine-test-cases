@@ -22,7 +22,7 @@ python lenvatinib_rcc_pkpd.py
 |------|---------|
 | `results/lenvatinib_rcc_timeseries.csv` | `C_ng_mL`, **`AUC_cum_biomarker_ng_h_mL`**, **`AUC_interval_tumor_ng_h_mL`**, tumor mm, % change biomarkers/tumor |
 | `results/figures/figure4_style_pk_pd_tgi.png` | Biomarkers, tumor % change, concentration + interval AUC |
-| `results/validation_checks.txt` | Figure 4–style checks (dual patient definitions per caption) |
+| `results/validation_checks.txt` | Figure 4–style checks on the **primary** patient; Section **C** only: >35% shrink (73.2 kg, 70.2 mm) |
 | `results/assumptions_block.txt` | Assumptions A1–A7 |
 
 ## Key CLI flags
@@ -31,7 +31,8 @@ python lenvatinib_rcc_pkpd.py
 |------|------|
 | `--tumor-auc-window-weeks` | Trailing **interval AUC** window for TGI Hill (default **8** wk, RECIST tumor assessments every 8 wk in randomization phase). |
 | `--dt-h` | Euler step (h); default **0.1** (stiff Ang-2 Hill γ). |
-| `--y0-tumor-mm` | Baseline sum of longest diameters (mm); default **70.2** (caption for >35% shrink). |
+| `--bw-kg` | Default **75.1** (Figure 4 simulation patient). |
+| `--y0-tumor-mm` | Default **59.5** mm SLD (Figure 4 median from studies 303+211). Shrinkage **>35%** caption uses **73.2 kg / 70.2 mm** in `validation_checks.txt` Section C only. |
 | `--biomarker-dpslope` | Optional Table 2 DPslope (1/h); default **0** for long treated-only runs. |
 | `--pk-legacy-split` + `--f-zero-order` | Legacy fraction-split ZO/FO; default is single-depot Majid-style PK. |
 

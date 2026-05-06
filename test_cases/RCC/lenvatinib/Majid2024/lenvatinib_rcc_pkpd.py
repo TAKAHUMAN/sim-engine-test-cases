@@ -499,7 +499,12 @@ def main() -> None:
     p = argparse.ArgumentParser(description="Lenvatinib RCC PK/PD/TGI (Majid et al. 2024)")
     p.add_argument("--weeks", type=float, default=52.0)
     p.add_argument("--dose-mg", type=float, default=24.0)
-    p.add_argument("--bw-kg", type=float, default=73.2)
+    p.add_argument(
+        "--bw-kg",
+        type=float,
+        default=75.1,
+        help="Body weight (kg); default 75.1 = Figure 4 simulation patient (Majid et al.)",
+    )
     p.add_argument("--no-rcc-cl", action="store_true")
     p.add_argument(
         "--dt-h",
@@ -507,7 +512,12 @@ def main() -> None:
         default=0.1,
         help="Euler step (h); 0.1 recommended (Majid-style stiff biomarker γ); 0.5 often <0.5%% drift",
     )
-    p.add_argument("--y0-tumor-mm", type=float, default=70.2, help="Baseline SLD (mm); 70.2 for >35%% shrink caption")
+    p.add_argument(
+        "--y0-tumor-mm",
+        type=float,
+        default=59.5,
+        help="Baseline SLD (mm); default 59.5 = Figure 4 simulation patient (studies 303+211 median)",
+    )
     p.add_argument(
         "--tumor-auc-window-weeks",
         type=float,
@@ -551,31 +561,22 @@ def main() -> None:
     fig_path = results / "figures" / "figure4_style_pk_pd_tgi.png"
     plot_figure4_style(df, fig_path)
 
-    # Fig. 4 biomarker timing: medians from studies 303+211 (Majid et al. caption)
-    df_fig4 = run_scenario(bw_kg=75.1, y0_tumor_mm=59.5, **common_kw)
-    fig4 = paper_figure4_timing_metrics(df_fig4)
-
     summ = validation_summary(df)
+    fig4 = paper_figure4_timing_metrics(df)
     lines = [
         "Majid et al. 2024 CPT PSP 2024;13(6):954-969 — validation vs Figure 4 narrative",
         "",
-        "A) Primary exported run (CLI: BW, baseline tumor, interval window)",
-        f"    BW={args.bw_kg} kg, baseline tumor={args.y0_tumor_mm} mm, TGI AUC window={args.tumor_auc_window_weeks} wk",
+        "A) Primary exported run (Figure 4 reference patient: default BW 75.1 kg, baseline tumor 59.5 mm)",
+        f"    CLI: BW={args.bw_kg} kg, baseline tumor={args.y0_tumor_mm} mm, TGI AUC window={args.tumor_auc_window_weeks} wk",
         f"    VEGF % change @ 2 wk: {summ['vegf_pct_change_2w']:.2f}%",
         f"    FGF-23 % change @ 8 wk: {summ['fgf23_pct_change_8w']:.2f}%",
         f"    Ang-2 % change @ 4 wk: {summ['ang2_pct_change_4w']:.2f}%",
         f"    Tie-2 % change @ 8 wk: {summ['tie2_pct_change_8w']:.2f}%",
         f"    Tumor % change @ 52 wk: {summ['tumor_pct_change_52w']:.2f}%",
-        "",
-        "B) Figure 4 biomarker profile (BW=75.1 kg, baseline tumor=59.5 mm; same dose/window/dt)",
-        f"    VEGF % @ 2 wk: {fig4['vegf_pct_2w']:.2f}% (paper near-peak ~2 wk)",
-        f"    FGF-23 % @ 8 wk: {fig4['fgf23_pct_8w']:.2f}% (paper near-peak ~8 wk)",
-        f"    Ang-2 % @ 4 wk: {fig4['ang2_pct_4w']:.2f}% (paper near-nadir ~4 wk)",
-        f"    Tie-2 % @ 8 wk: {fig4['tie2_pct_8w']:.2f}% (paper near-nadir ~8 wk)",
-        f"    VEGF week of >=95% of wk-6 response: {fig4['vegf_plateau95_week']:.2f} wk (proxy ~2 wk)",
-        f"    FGF-23 week of >=95% of wk-12 response: {fig4['fgf23_plateau95_week']:.2f} wk (proxy ~8 wk)",
-        f"    Ang-2 week of <=95% depth vs wk-10 nadir: {fig4['ang2_nadir95_week']:.2f} wk (proxy ~4 wk)",
-        f"    Tie-2 week of <=95% depth vs wk-12 nadir: {fig4['tie2_nadir95_week']:.2f} wk (proxy ~8 wk)",
+        f"    VEGF week >=95% of wk-6 response: {fig4['vegf_plateau95_week']:.2f} wk (proxy ~2 wk)",
+        f"    FGF-23 week >=95% of wk-12 response: {fig4['fgf23_plateau95_week']:.2f} wk (proxy ~8 wk)",
+        f"    Ang-2 week <=95% depth vs wk-10 nadir: {fig4['ang2_nadir95_week']:.2f} wk (proxy ~4 wk)",
+        f"    Tie-2 week <=95% depth vs wk-12 nadir: {fig4['tie2_nadir95_week']:.2f} wk (proxy ~8 wk)",
         "",
         "C) >35% shrink caption (73.2 kg, 70.2 mm baseline, 24 mg QD) — dedicated check",
     ]
@@ -596,23 +597,16 @@ def main() -> None:
     lines.extend(
         [
             "",
-            "Pass/fail (informational; primary run):",
+            "Pass/fail (informational; primary = Figure 4 reference patient unless CLI overrides):",
             f"  VEGF @ 2 wk in band: {35.0 <= summ['vegf_pct_change_2w'] <= 58.0}",
             f"  FGF-23 @ 8 wk in band: {45.0 <= summ['fgf23_pct_change_8w'] <= 56.0}",
             f"  Ang-2 @ 4 wk in band: {-36.0 <= summ['ang2_pct_change_4w'] <= -30.0}",
             f"  Tie-2 drop by 8 wk: {summ['tie2_pct_change_8w'] <= -22.0}",
-            f"  Tumor shrink >= 35% (primary run): {summ['tumor_pct_change_52w'] <= -35.0}",
-            "",
-            "Figure 4 timing / magnitude (BW 75.1 kg, 59.5 mm; informational):",
-            f"  VEGF % @ 2 wk: {35.0 <= fig4['vegf_pct_2w'] <= 58.0}",
-            f"  FGF-23 % @ 8 wk: {45.0 <= fig4['fgf23_pct_8w'] <= 56.0}",
-            f"  Ang-2 % @ 4 wk: {-36.0 <= fig4['ang2_pct_4w'] <= -30.0}",
-            f"  Tie-2 % @ 8 wk: {fig4['tie2_pct_8w'] <= -22.0}",
             f"  VEGF plateau95 week ~2 wk: {1.0 <= fig4['vegf_plateau95_week'] <= 4.5}",
             f"  FGF-23 plateau95 week ~8 wk: {6.0 <= fig4['fgf23_plateau95_week'] <= 11.0}",
             f"  Ang-2 nadir95 week ~4 wk: {2.5 <= fig4['ang2_nadir95_week'] <= 6.5}",
             f"  Tie-2 nadir95 week ~8 wk: {6.0 <= fig4['tie2_nadir95_week'] <= 11.0}",
-            f"  Shrink caption (73.2 kg, 70.2 mm): {shrink_pct <= -35.0}",
+            f"  Shrink caption Section C (73.2 kg, 70.2 mm): {shrink_pct <= -35.0}",
         ]
     )
     chk = results / "validation_checks.txt"
