@@ -1,0 +1,11 @@
+Assumptions (Majid et al. 2024 alignment)
+A1. PK Table 1; allometry as published; RCC CL/F * 0.851.
+A2. Default PK absorption: single depot per dose (F1*dose), simultaneous nominal ZO (F1*dose/D1
+    during D1) and FO (Ka*depot), mass-conserving per Euler step. Legacy: --pk-legacy-split.
+A3. Biomarker Hill uses cumulative AUC = integral C_central dt from t=0 on the same time grid.
+A4. TGI Hill uses trailing interval AUC (difference in cumulative AUC over
+    --tumor-auc-window-weeks; default 8 wk per RECIST schedule in Majid et al.), distinct from
+    biomarker cumulative AUC.
+A5. Tumor is integrated in a second pass using PK/PD outputs (no tumor→biomarker feedback).
+A6. DPslope default 0 for long treated-only runs; optional --biomarker-dpslope.
+A7. Euler integration; default --dt-h 0.1 h for publication-style stability (Ang-2 Hill γ=4.27).

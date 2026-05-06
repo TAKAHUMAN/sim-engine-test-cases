@@ -1,0 +1,40 @@
+Majid et al. 2024 CPT PSP 2024;13(6):954-969 — validation vs Figure 4 narrative
+
+A) Primary exported run (CLI: BW, baseline tumor, interval window)
+    BW=73.2 kg, baseline tumor=70.2 mm, TGI AUC window=8.0 wk
+    VEGF % change @ 2 wk: 37.74%
+    FGF-23 % change @ 8 wk: 45.99%
+    Ang-2 % change @ 4 wk: -33.34%
+    Tie-2 % change @ 8 wk: -23.75%
+    Tumor % change @ 52 wk: -43.34%
+
+B) Figure 4 biomarker profile (BW=75.1 kg, baseline tumor=59.5 mm; same dose/window/dt)
+    VEGF % @ 2 wk: 37.55% (paper near-peak ~2 wk)
+    FGF-23 % @ 8 wk: 45.91% (paper near-peak ~8 wk)
+    Ang-2 % @ 4 wk: -33.33% (paper near-nadir ~4 wk)
+    Tie-2 % @ 8 wk: -23.71% (paper near-nadir ~8 wk)
+    VEGF week of >=95% of wk-6 response: 4.02 wk (proxy ~2 wk)
+    FGF-23 week of >=95% of wk-12 response: 8.64 wk (proxy ~8 wk)
+    Ang-2 week of <=95% depth vs wk-10 nadir: 3.51 wk (proxy ~4 wk)
+    Tie-2 week of <=95% depth vs wk-12 nadir: 8.62 wk (proxy ~8 wk)
+
+C) >35% shrink caption (73.2 kg, 70.2 mm baseline, 24 mg QD) — dedicated check
+    Tumor % change @ 52 wk: -43.34% (paper > -35%)
+
+Pass/fail (informational; primary run):
+  VEGF @ 2 wk in band: True
+  FGF-23 @ 8 wk in band: True
+  Ang-2 @ 4 wk in band: True
+  Tie-2 drop by 8 wk: True
+  Tumor shrink >= 35% (primary run): True
+
+Figure 4 timing / magnitude (BW 75.1 kg, 59.5 mm; informational):
+  VEGF % @ 2 wk: True
+  FGF-23 % @ 8 wk: True
+  Ang-2 % @ 4 wk: True
+  Tie-2 % @ 8 wk: True
+  VEGF plateau95 week ~2 wk: True
+  FGF-23 plateau95 week ~8 wk: True
+  Ang-2 nadir95 week ~4 wk: True
+  Tie-2 nadir95 week ~8 wk: True
+  Shrink caption (73.2 kg, 70.2 mm): True
