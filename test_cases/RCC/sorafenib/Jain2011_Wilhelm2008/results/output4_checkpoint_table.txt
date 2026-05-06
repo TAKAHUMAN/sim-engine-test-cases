@@ -1,0 +1,18 @@
+╔════════════════════════════════════════════════════════════╗
+║  SORAFENIB RCC PK/PD — REVISED COMPARISON CHECKPOINTS     ║
+╠═══╦═══════════════════════════╦══════════╦════════════════╣
+║ # ║ Metric                    ║ Result   ║ Note           ║
+╠═══╬═══════════════════════════╬══════════╬════════════════╣
+║ 1 ║ AUCss(0-12h) mean [µM·h] ║    106.8 ║ Target: 97-146 ║
+║ 2 ║ Cmax,ss mean [µM]        ║      9.9 ║ Target: 6-15   ║
+║ 3 ║ EHC contribution         ║    61.1% ║ Target: ~50%   ║
+║ 4 ║ Human AUC(0-24h) [µM·h]  ║    215.3 ║ ~217 expected  ║
+║ 5 ║ 786-O Emax (Approach 1)  ║     81.0% ║ Target: 75-85% ║
+║ 6 ║ 786-O R² (Approach 1)    ║    0.997 ║ Target: >0.85  ║
+║ 7 ║ Renca R² (Approach 1)    ║    1.000 ║ Target: >0.85  ║
+║ 8 ║ Human TGI 786-O Appr1    ║     78.3% ║ Expect: 50-80% ║
+║ 9 ║ Human TGI 786-O Appr2a   ║      0.7% ║ Expect: <28%   ║
+║10 ║ Human TGI 786-O Appr2b   ║     79.9% ║ Expect: ~50%+  ║
+║11 ║ Human TGI 786-O Appr3    ║     22.8% ║ Expect: 20-35% ║
+║12 ║ Approach 1 vs 3 delta    ║     55.5% ║ FLAG (>30%)    ║
+╚═══╩═══════════════════════════╩══════════╩════════════════╝

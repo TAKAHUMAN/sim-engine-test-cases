@@ -1,0 +1,21 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                  ASSUMPTIONS (READ FIRST)                            ║
+╠══════════════════════════════════════════════════════════════════════╣
+║ A1. Mouse AUC estimated via power-law from HCC anchor points         ║
+║     (Wilhelm 2008; not directly measured in RCC xenograft studies).  ║
+║ A2. fu_mouse = 0.030 assumed (literature typical; not from paper).   ║
+║ A3. fu_human = 0.006 from Wilhelm 2008 (99.4% bound in human plasma).║
+║ A4. Mouse dosing QD => AUC(0-24h); human BID => use AUC(0-24h)=2×AUC ║
+║     ss(0-12h) for cross-species exposure comparison.                  ║
+║ A5. 786-O Emax capped at ~80% (biological plateau from data).        ║
+║ A6. VEGFR-2 cellular IC50 ~ 90 nM (0.090 µM free) used as EC50 anchor ║
+║     for Approach 3 (Wilhelm 2004 cited as ref [27] in Wilhelm 2008). ║
+║ A7. Jain 2011 PopPK cohort not RCC (mCRPC/NSCLC/CRC); extrapolation. ║
+║ A8. No allometric scaling between mouse and human PK is applied.     ║
+║ A9. PD fits are HIGH uncertainty (3–4 points for 2–3 params).        ║
+║ A10. Approach 1 uses TOTAL AUC matching (paper-consistent); no fu adj.║
+║ A11. Approach 2a uses fu_mouse=0.030 (literature ~97% bound).         ║
+║ A12. Approach 2b uses fu_mouse=0.005 (~99.5% bound; Chang 2007-like). ║
+║ A13. Approach 1 vs VEGFR IC50 may differ (AUC vs Cavg, mechanism).    ║
+║ A14. None is a validated IVIVC for RCC; exploratory simulation only.  ║
+╚══════════════════════════════════════════════════════════════════════╝
