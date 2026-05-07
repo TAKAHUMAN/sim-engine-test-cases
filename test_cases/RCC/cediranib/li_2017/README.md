@@ -1,5 +1,5 @@
 # Cediranib PK/PD Simulation - RCC
-## Test Case: Li et al. (2017) [PMCID: PMC5510068]
+## Test Case: Li et al. (2017) [PMCID: PMC5510068; PD PMID: 20044618]
 
 ### Overview
 This test case implements a Cediranib (AZD2171) PK/PD validation workflow centered on the Li et al. 2017 population PK parameters and VEGFR-2 target coverage.
@@ -19,7 +19,7 @@ Li J, Al-Huniti N, Henningsson A, Tang W, Masson E. Population pharmacokinetic a
 ### Source Split (PK vs PD)
 
 - PK source paper: Li et al. 2017 (PMCID: PMC5510068)
-- PD/biomarker source: separate VEGFR-2 and sVEGFR-2 literature used for mechanistic linkage (not from the Li et al. popPK paper alone)
+- PD/biomarker source: VEGFR-2 and sVEGFR-2 literature (PMID: 20044618), used for mechanistic linkage rather than from the Li et al. popPK paper alone
 
 ### Folder Structure
 

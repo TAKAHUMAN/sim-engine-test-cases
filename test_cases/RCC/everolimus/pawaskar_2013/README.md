@@ -1,5 +1,5 @@
 # Everolimus PBPK/PD Simulation - RCC
-## Test Case: Pawaskar et al. (2013) + RECORD-1 linkage [PMCID: PMC3755750]
+## Test Case: Pawaskar et al. (2013) + RECORD-1 linkage [PMCIDs: PMC3755750, PMC3495014]
 
 ### Overview
 This test case contains an everolimus PBPK/PD workflow for RCC translation:
@@ -15,10 +15,13 @@ Pawaskar DK, Straubinger RM, Fetterly GJ, Hylander BH, Repasky EA, Ma WW, Jusko 
 
 Motzer RJ, Escudier B, Oudard S, Hutson TE, Porta C, Bracarda S, Grünwald V, Thompson JA, Figlin RA, Hollaender N, Urbanowitz G, Berg WJ, Kay A, Lebwohl D, Ravaud A, RECORD-1 Study Group. Efficacy of everolimus in advanced renal cell carcinoma: a double-blind, randomised, placebo-controlled phase III trial. *Lancet.* 2008;372(9637):449–456. doi: 10.1016/S0140-6736(08)61039-9. PMCID: not available in Europe PMC.
 
+Stein A, Wang W, Carter AA, Chiparus O, Hollaender N, Kim H, Motzer RJ, Sarr C. Dynamic tumor modeling of the dose-response relationship for everolimus in metastatic renal cell carcinoma using data from the phase 3 RECORD-1 trial. *BMC Cancer.* 2012;12:311. doi: 10.1186/1471-2407-12-311. PMCID: PMC3495014.
+
 ### Source Split (PK vs PD)
 
 - PK source paper: Pawaskar et al. 2013 (PMCID: PMC3755750)
-- PD/clinical linkage source: RECORD-1 (Motzer et al. 2008; no PMCID in Europe PMC)
+- PD source paper: Stein et al. 2012 RECORD-1 tumor model (PMCID: PMC3495014)
+- Clinical trial anchor: RECORD-1 primary trial (Motzer et al. 2008; no PMCID in Europe PMC)
 
 ### Files
 - `everolimus_pkpd.py`: Core implementation and CLI
