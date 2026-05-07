@@ -1,8 +1,19 @@
-# Sorafenib — RCC PK/PD (Jain 2011 PK + Wilhelm 2008 RCC PD)
+# Sorafenib — RCC PK/PD (Jain 2011 PK + Wilhelm 2008 RCC PD) [PMCIDs: PMC3162659, PMC12261297]
 
 Exploratory **population PK** (Jain et al. 2011, *Br J Clin Pharmacol* 72:294-305) linked to **RCC-only xenograft PD** (786-O, Renca) from Wilhelm et al. 2008, *Mol Cancer Ther* 7(10):3129-3140, plus a **VEGFR-2 IC50 anchor** (Wilhelm et al. 2004, *Cancer Res* 64:7099).
 
 **Not for clinical decision-making.** See assumptions file and parent repository guidelines.
+
+## Source Split (PK vs PD)
+
+- PK source paper: Jain et al. 2011 (PMCID: PMC3162659)
+- PD source paper: Wilhelm et al. 2008 RCC xenograft preclinical PD (PMCID: PMC12261297)
+
+## References
+
+Jain L, Woo S, Gardner ER, Dahut WL, Kohn EC, Kummar S, Mould DR, Giaccone G, Yarchoan R, Venitz J, Figg WD. Population pharmacokinetic analysis of sorafenib in patients with solid tumours. *Br J Clin Pharmacol.* 2011;72(2):294–305. doi: 10.1111/j.1365-2125.2011.03963.x. PMCID: PMC3162659.
+
+Wilhelm SM, Adnane L, Newell P, Villanueva A, Llovet JM, Lynch M. Preclinical overview of sorafenib, a multikinase inhibitor that targets both Raf and VEGF and PDGF receptor tyrosine kinase signaling. *Mol Cancer Ther.* 2008;7(10):3129–3140. doi: 10.1158/1535-7163.MCT-08-0013. PMCID: PMC12261297.
 
 ## How to run
 

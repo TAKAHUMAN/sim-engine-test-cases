@@ -1,4 +1,4 @@
-# Lenvatinib — integrated PK / biomarker PD / TGI (RCC-adapted)
+# Lenvatinib — integrated PK / biomarker PD / TGI (RCC-adapted) [PMCID: PMC11179699]
 
 Deterministic implementation of the **Majid et al. (2024)** integrated PopPK / biomarker / TGI model (RR-DTC), with **RCC CL/F × 0.851** applied to clearance for RCC-style simulations.
 

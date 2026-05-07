@@ -1,5 +1,5 @@
 # Sunitinib Population PK/PD Simulation — RCC & GIST
-## Test Case: Khosravan et al. (2016) Clin Pharmacokinet 55:1251–1269
+## Test Case: Khosravan et al. (2016) Clin Pharmacokinet 55:1251–1269 [PMCID: PMC5526090]
 
 ### Overview
 Population PK/PD simulation replicating the clinical trial comparison of sunitinib
@@ -7,10 +7,14 @@ Population PK/PD simulation replicating the clinical trial comparison of sunitin
 2 weeks on / 1 week off) in **Renal Cell Carcinoma (RCC)** and **GIST** patients.
 
 - **Paper**: Khosravan R et al. *Clin Pharmacokinet* 2016;55(10):1251–1269  
-  DOI: 10.1007/s40262-016-0404-z
+  DOI: 10.1007/s40262-016-0404-5
 - **Drug**: Sunitinib (SUTENT®) + active metabolite SU12662
 - **Indication**: RCC (primary), GIST (secondary)
 - **Model type**: Population PK/PD — 2-compartment PK + IDR SLD + TCSFL platelet/ANC
+
+### Reference
+
+Khosravan R, Motzer RJ, Fumagalli E, Rini BI. Population Pharmacokinetic/Pharmacodynamic Modeling of Sunitinib by Dosing Schedule in Patients with Advanced Renal Cell Carcinoma or Gastrointestinal Stromal Tumor. *Clin Pharmacokinet.* 2016;55(10):1251–1269. doi: 10.1007/s40262-016-0404-5. PMCID: PMC5526090.
 
 ---
 

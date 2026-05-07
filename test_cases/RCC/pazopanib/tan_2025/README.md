@@ -1,5 +1,5 @@
 # Pazopanib PK/PD Simulation - mRCC and STS
-## Test Case: Tan et al. (2025)
+## Test Case: Tan et al. (2025) [PMCID: PMC12064635]
 
 ### Overview
 This test case captures the pazopanib model chain from:
@@ -12,6 +12,10 @@ Model blocks:
 - PK: 1-compartment oral model, first-order absorption/elimination, dose-nonlinear F1
 - Toxicity: Gompertz time-to-event model with Cmin,ss threshold at 34 mg/L
 - Tumor dynamics: semimechanistic SLD model for mRCC and STS with primary/acquired resistance
+
+### Reference
+
+Tan Z, Völler S, Yin A, Rieborn A, Gelderblom H, van der Hulle T, Knibbe CAJ, Moes DJAR. Model-Informed Dose Optimization of Pazopanib in Real-World Patients with Cancer. *Clin Pharmacokinet.* 2025. doi: 10.1007/s40262-025-01504-5. PMCID: PMC12064635.
 
 ### Folder Structure
 

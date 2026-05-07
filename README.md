@@ -20,14 +20,14 @@ test_cases/
 
 | Indication | Drug | Reference | Status |
 |---|---|---|---|
-| RCC | Sunitinib | Khosravan 2016 | Complete |
-| RCC | Sunitinib | Diekstra 2017 | Complete |
-| RCC | Axitinib | Schindler 2017 | Complete |
-| RCC | Everolimus | Pawaskar 2013 + RECORD-1 | Complete |
-| RCC | Pazopanib | Tan 2025 | Complete |
-| RCC | Sorafenib | Jain 2011 + Wilhelm 2008 RCC | Complete |
-| RCC | Lenvatinib | Majid et al. 2024 (RCC covariate) | Complete |
-| RCC | Cediranib | Li et al. 2017 | Complete |
+| RCC | Sunitinib | Khosravan 2016 (PMCID: PMC5526090) | Complete |
+| RCC | Sunitinib | Diekstra 2017 (PMCID: PMC5613186) | Complete |
+| RCC | Axitinib | PK: Rini 2013; PD: Schindler 2017 (PMCID: PMC5488123) | Complete |
+| RCC | Everolimus | PK: Pawaskar 2013 (PMCID: PMC3755750); PD: RECORD-1 (no PMCID) | Complete |
+| RCC | Pazopanib | Tan 2025 (PMCID: PMC12064635) | Complete |
+| RCC | Sorafenib | PK: Jain 2011 (PMCID: PMC3162659); PD: Wilhelm 2008 (PMCID: PMC12261297) | Complete |
+| RCC | Lenvatinib | Majid et al. 2024 (PMCID: PMC11179699, RCC covariate) | Complete |
+| RCC | Cediranib | PK: Li et al. 2017 (PMCID: PMC5510068); PD: separate biomarker source | Complete |
 
 ## Adding a New Test Case
 
@@ -39,11 +39,11 @@ test_cases/
 ## Current Coverage
 
 - RCC (Renal Cell Carcinoma): 8 models
-  - Sunitinib PK/PD - Khosravan et al., Clin Pharmacokinet 2016;55:1251-1269
-  - Sunitinib PK/PD - Diekstra et al. 2017
-  - Axitinib PK/PD chain - Schindler et al. 2017
-  - Everolimus PBPK/PD chain - Pawaskar et al. 2013 with RECORD-1 linkage
-  - Pazopanib PK/PD chain - Tan et al. 2025 (real-world mRCC and STS)
-  - Sorafenib PK/PD - Jain et al. 2011 (*Br J Clin Pharmacol*) + Wilhelm et al. 2008 RCC xenograft PD (*Mol Cancer Ther*)
-  - Lenvatinib integrated PK/biomarker/TGI — Majid et al. 2024 (CL/F × 0.851 for RCC)
-  - Cediranib PK/PD - Li et al. 2017 population PK with VEGFR-2 target coverage and sVEGFR-2 biomarker linkage
+  - Sunitinib PK/PD - Khosravan et al., Clin Pharmacokinet 2016;55:1251-1269 (PMCID: PMC5526090)
+  - Sunitinib PK/PD - Diekstra et al. 2017 (PMCID: PMC5613186)
+  - Axitinib PK/PD chain - PK source: Rini et al. 2013; PD source: Schindler et al. 2017 (PMCID: PMC5488123)
+  - Everolimus PBPK/PD chain - PK source: Pawaskar et al. 2013 (PMCID: PMC3755750); PD source: RECORD-1 linkage (no PMCID found)
+  - Pazopanib PK/PD chain - Tan et al. 2025 (real-world mRCC and STS, PMCID: PMC12064635)
+  - Sorafenib PK/PD - PK source: Jain et al. 2011 (*Br J Clin Pharmacol*, PMCID: PMC3162659); PD source: Wilhelm et al. 2008 RCC xenograft PD (*Mol Cancer Ther*, PMCID: PMC12261297)
+  - Lenvatinib integrated PK/biomarker/TGI - Majid et al. 2024 (CL/F x 0.851 for RCC, PMCID: PMC11179699)
+  - Cediranib PK/PD - PK source: Li et al. 2017 population PK (PMCID: PMC5510068); PD source: separate VEGFR-2/sVEGFR-2 biomarker literature

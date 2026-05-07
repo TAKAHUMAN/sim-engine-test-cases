@@ -1,5 +1,5 @@
 # Axitinib PK/PD Simulation - mRCC
-## Test Case: Schindler et al. (2017)
+## Test Case: Schindler et al. (2017) [PMCID: PMC5488123]
 
 ### Overview
 This test case contains an axitinib literature-style PK/PD simulation chain for metastatic renal cell carcinoma (mRCC):
@@ -13,6 +13,15 @@ This test case contains an axitinib literature-style PK/PD simulation chain for 
 Primary references:
 - Rini et al. 2013 (axitinib population PK)
 - Schindler et al. 2017 (biomarkers, dBP, tumor-size, OS linkage)
+
+### Source Split (PK vs PD)
+
+- PK source paper: Rini et al. 2013 (population PK)
+- PD/TGI/OS source paper: Schindler et al. 2017 (PMCID: PMC5488123)
+
+### Reference
+
+Schindler E, Amantea MA, Karlsson MO, Friberg LE. A Pharmacometric Framework for Axitinib Exposure, Efficacy, and Safety in Metastatic Renal Cell Carcinoma Patients. *CPT Pharmacometrics Syst Pharmacol.* 2017;6(6):373–382. doi: 10.1002/psp4.12193. PMCID: PMC5488123.
 
 ### Folder Structure
 

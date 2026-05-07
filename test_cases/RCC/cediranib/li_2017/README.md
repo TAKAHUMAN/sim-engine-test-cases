@@ -1,5 +1,5 @@
 # Cediranib PK/PD Simulation - RCC
-## Test Case: Li et al. (2017)
+## Test Case: Li et al. (2017) [PMCID: PMC5510068]
 
 ### Overview
 This test case implements a Cediranib (AZD2171) PK/PD validation workflow centered on the Li et al. 2017 population PK parameters and VEGFR-2 target coverage.
@@ -11,6 +11,15 @@ Model blocks:
 - PD: direct VEGFR-2 Emax inhibition linked to free plasma concentration.
 - Biomarker: indirect-response sVEGFR-2 production inhibition model.
 - Dose comparison: 15, 20, and 30 mg once daily steady-state target coverage.
+
+### Reference
+
+Li J, Al-Huniti N, Henningsson A, Tang W, Masson E. Population pharmacokinetic and exposure simulation analysis for cediranib (AZD2171) in pooled Phase I/II studies in patients with cancer. *Br J Clin Pharmacol.* 2017;83(9):1969–1980. doi: 10.1111/bcp.13266. PMCID: PMC5510068.
+
+### Source Split (PK vs PD)
+
+- PK source paper: Li et al. 2017 (PMCID: PMC5510068)
+- PD/biomarker source: separate VEGFR-2 and sVEGFR-2 literature used for mechanistic linkage (not from the Li et al. popPK paper alone)
 
 ### Folder Structure
 
