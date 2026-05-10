@@ -1,0 +1,6 @@
+scenario,auc_ug_h_ml,cmax_ng_ml,cmin_ng_ml,epo_nadir_percent_baseline,time_to_epo_nadir_days,time_to_50pct_epo_days,grade3_anemia_onset_note
+standard_120mg_ffp,16.55908915184662,1444.5417252554066,293.4907750142183,38.892285024269036,26.0625,0.020833333333333332,Not mechanistically identifiable from EPO alone; Hb turnover and baseline Hb are missing.
+standard_120mg_fmf,16.5554562919278,1334.445823473106,300.05036266721373,39.40951690403606,26.083333333333332,0.03125,Not mechanistically identifiable from EPO alone; Hb turnover and baseline Hb are missing.
+dual_pm_3p2x_exposure,120.97497413304703,5787.107687947004,4451.320229515859,34.450586883630926,27.0625,0.020833333333333332,Not mechanistically identifiable from EPO alone; Hb turnover and baseline Hb are missing.
+elderly_65y,17.585292204599007,1511.0412175323115,321.1373236427764,38.61698127903596,26.0625,0.020833333333333332,Not mechanistically identifiable from EPO alone; Hb turnover and baseline Hb are missing.
+obese_100kg,13.571802334751187,1107.87069975456,264.2679308049764,40.79901214458706,27.0625,0.020833333333333332,Not mechanistically identifiable from EPO alone; Hb turnover and baseline Hb are missing.

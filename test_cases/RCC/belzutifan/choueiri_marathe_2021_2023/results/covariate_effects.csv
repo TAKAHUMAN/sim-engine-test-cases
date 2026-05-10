@@ -1,0 +1,11 @@
+effect,algebra
+WT on CL/Q,(WT/73.64)^0.65
+WT on V2/V3,(WT/73.64)^1.06
+AGE on CL,(AGE/55)^-0.36
+AGE on V2,(AGE/55)^-0.20
+Fed on KA,KA * (1 - 0.876)
+FMF on KA,KA * (1 - 0.474)
+UGT2B17 EM on CL,CL * (1 + 0.391)
+UGT2B17 PM on CL,CL * (1 - 0.242)
+CYP2C19 PM on CL,CL * (1 - 0.36)
+UGT2B17 PM on F,F * (1 + 0.11)

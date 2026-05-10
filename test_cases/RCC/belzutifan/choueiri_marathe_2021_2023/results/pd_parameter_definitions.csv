@@ -1,0 +1,5 @@
+parameter,value,unit,source_or_note
+EPO baseline,15.0,mIU/mL,Assumed typical value within supplied healthy/RCC range
+Emax,0.665995425951836,fraction,Assumption bounded 0-1; substantial suppression
+EC50,0.20779418070514435,ug/mL,Concentration-linked; calibrated to 60% suppression at 120 mg Cavg
+Hill gamma,1.2425878584397494,unitless,Default assumption unless digitized EPO data are supplied

@@ -1,0 +1,12 @@
+parameter,value,unit,source_or_note
+CL/F validation,7.25,L/h,Study 4 VHL-RCC Table 5 geometric mean used for validation
+CL/F Table 2 fixed effect,5.63,L/h,PMC10583240 Table 2 population estimate
+V2/Fpop,85.4,L,"Fixed, PMC10583240 Table 2"
+Q/Fpop,5.37,L/h,"Fixed, PMC10583240 Table 2"
+V3/Fpop,30.38,L,"Fixed, PMC10583240 Table 2"
+KApop,2.4,1/h,"Fixed, PMC10583240 Table 2"
+ALAG,0.16,h,Fixed lag time
+IIV CL variance,0.15,log-scale variance,SD 0.387
+IIV V2 variance,0.013,log-scale variance,SD 0.114
+IIV V3 variance,0.19,log-scale variance,SD 0.436
+IIV KA variance,1.15,log-scale variance,SD 1.072

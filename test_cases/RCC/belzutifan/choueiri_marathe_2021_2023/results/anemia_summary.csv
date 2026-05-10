@@ -1,0 +1,2 @@
+n,grade3_anemia_incidence_percent,published_grade3_anemia_percent,median_time_to_grade3_days,mean_baseline_hb_g_dl,mean_min_hb_g_dl,epo_hb_sensitivity,model_status
+1000,27.0,27.0,91.5,9.551991687377479,7.5808161990521015,0.47791748046875,calibrated_to_phase1_grade3_anemia_incidence_requires_patient_hb_rescue_data
