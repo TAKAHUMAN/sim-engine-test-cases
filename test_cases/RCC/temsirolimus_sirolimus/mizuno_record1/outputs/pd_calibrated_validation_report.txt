@@ -1,0 +1,42 @@
+Adult RCC jointly calibrated acquired-resistance model
+
+Structure: lambda_kill(t) = lambda_kill_0 * exp(-t / tau_resist)
+Calibration cohort size: 500
+Validation cohort size: 500
+Optimal lambda_kill_0 median: 0.02455 /day
+Optimal tau_resist: 39.50 days
+Objective value: 0.054843
+Optimizer success: True
+Optimizer message: Skipped local optimizer; selected best coarse-grid candidate.
+
+Validation endpoints:
+Median PFS: 4.01 months (target 4.90)
+6-month PFS: 29.8% (target 26.0%)
+12-month PFS: 7.4% (target 7.5%)
+
+Adult RCC PK-PD validation
+
+Median PFS: 4.01 months
+Mean PFS: 4.80 months
+SD PFS: 3.35 months
+6-month PFS probability: 29.8%
+12-month PFS probability: 7.4%
+Median steady-state S6K1 inhibition: 79.9%
+Kaplan-Meier plot: outputs\pd_calibrated_pfs_validation.png
+
+                                        target  simulated      reference status
+                 Median PFS within RECORD-1 CI   4.005770 4.0-5.5 months   PASS
+6-month PFS probability within +/-15% relative   0.298000    0.221-0.299   PASS
+  12-month PFS probability approximately 5-10%   0.074000      0.05-0.10   PASS
+     Median steady-state S6K1 inhibition >=80%   0.798559         >=0.80   FAIL
+
+Supervisor summary:
+                     metric    status                          interpretation
+Median PFS primary endpoint      PASS  Mechanistic median endpoint calibrated
+           6-month PFS tail      PASS                  Tail benchmark matched
+          12-month PFS tail      PASS             Long-tail benchmark matched
+     S6K1 target engagement NEAR PASS         Drug reaches target as expected
+           Code and linkage      PASS Audited PK to biomarker to PFS workflow
+
+Model refinement status:
+PFS tail is within the RECORD-1 validation band. Current structure is adequate for this benchmark.

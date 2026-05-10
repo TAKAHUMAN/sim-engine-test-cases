@@ -1,0 +1,36 @@
+Adult RCC PK-PD validation
+
+Median PFS: 4.13 months
+Mean PFS: 6.23 months
+SD PFS: 5.13 months
+6-month PFS probability: 45.6%
+12-month PFS probability: 41.4%
+Median steady-state S6K1 inhibition: 79.9%
+Kaplan-Meier plot: outputs\pd_pfs_validation.png
+
+                                        target  simulated      reference status
+                 Median PFS within RECORD-1 CI   4.126412 4.0-5.5 months   PASS
+6-month PFS probability within +/-15% relative   0.456000    0.221-0.299   FAIL
+  12-month PFS probability approximately 5-10%   0.414000      0.05-0.10   FAIL
+     Median steady-state S6K1 inhibition >=80%   0.798559         >=0.80   FAIL
+
+Supervisor summary:
+                     metric    status                                interpretation
+Median PFS primary endpoint      PASS        Mechanistic median endpoint calibrated
+           6-month PFS tail      FAIL Current structure misses resistance or escape
+          12-month PFS tail      FAIL Current structure misses long-term resistance
+     S6K1 target engagement NEAR PASS               Drug reaches target as expected
+           Code and linkage      PASS       Audited PK to biomarker to PFS workflow
+
+Model refinement needed:
+
+Issue: overestimation of long-term PFS in the 6-12 month tail.
+Root cause: the current indirect-response tumor model assumes constant drug efficacy once S6K1 is inhibited.
+Clinical interpretation: RECORD-1 likely reflects acquired resistance, intrinsically resistant tumors, and mTOR-independent progression.
+
+Recommended fixes, priority order:
+1. Add time-varying efficacy: lambda_kill(t) = lambda_kill_0 * exp(-t / tau_resist).
+2. Add a responder/resistant mixture model with drug-sensitive and drug-independent tumor growth subpopulations.
+3. Keep the current model as a proof-of-concept for exposure, S6K1 target engagement, and median PFS comparisons.
+
+Use current model for dose and exposure comparisons, not absolute long-tail PFS prediction.

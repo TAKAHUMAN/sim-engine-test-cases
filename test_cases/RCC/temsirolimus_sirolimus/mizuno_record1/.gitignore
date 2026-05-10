@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+pytest-cache-files*/
+
+# Local environments
+.venv/
+venv/
+env/
+
+# Generated test artifacts
+outputs/test_*/
+
+# Large regenerated simulation tables
+outputs/*.csv
+
+# Keep lightweight validation reports and figures trackable
+!outputs/*.txt
+!outputs/*.png
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
