@@ -30,6 +30,7 @@ test_cases/
 | RCC | Cediranib | PK: Li et al. 2017 (PMCID: PMC5510068); PD: biomarker source (PMID: 20044618) | Complete |
 | RCC | Dovitinib | Escudier et al. 2014 (PMID: 24691021; no PMCID found) | Complete |
 | RCC | Foretinib | Clinical/PD: Choueiri 2012; PK: Eder 2010 | Complete |
+| RCC | PT2385 | Courtney et al. 2018 JCO; EPO PD fitted from digitized Fig 2B | Complete |
 | Advanced malignancies | Deforolimus | Hartford et al. 2009 (DOI: 10.1158/1078-0432.CCR-08-2076) | Complete |
 
 ## Adding a New Test Case
@@ -41,7 +42,7 @@ test_cases/
 
 ## Current Coverage
 
-- RCC (Renal Cell Carcinoma): 10 models
+- RCC (Renal Cell Carcinoma): 11 models
   - Sunitinib PK/PD - Khosravan et al., Clin Pharmacokinet 2016;55:1251-1269 (PMCID: PMC5526090)
   - Sunitinib PK/PD - Diekstra et al. 2017 (PMCID: PMC5613186)
   - Axitinib PK/PD chain - PK source: Rini et al. 2013; PD source: Schindler et al. 2017 (PMCID: PMC5488123)
@@ -52,5 +53,6 @@ test_cases/
   - Cediranib PK/PD - PK source: Li et al. 2017 population PK (PMCID: PMC5510068); PD source: VEGFR-2/sVEGFR-2 biomarker literature (PMID: 20044618)
   - Dovitinib aggregate PK/PD - Escudier et al. 2014 metastatic RCC Phase II study (PMID: 24691021; no PMCID found)
   - Foretinib PK/PD - Clinical/PD source: Choueiri et al. 2012 PRCC phase II; PK source: Eder et al. 2010 phase I
+  - PT2385 PK/PD - Courtney et al. 2018 JCO HIF-2alpha antagonist study; EPO IC50 fitted from digitized Figure 2B with Kout fixed to literature EPO half-life
 - Advanced malignancies: 1 model
   - Deforolimus PK/PD - Hartford et al. 2009 phase I weekly IV study in patients with advanced malignancies

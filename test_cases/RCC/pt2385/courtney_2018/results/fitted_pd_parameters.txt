@@ -1,0 +1,20 @@
+﻿══════════════════════════════════════════════
+  PT2385 FITTED PD PARAMETERS
+  Source data: Courtney et al. 2018, JCO, Fig 2B (digitized)
+  Fitting method: Weighted least squares, bounded scalar optimization for IC50
+  Fixed parameters: Kout=0.693/5h, Imax=1.0, n_hill=1.0
+══════════════════════════════════════════════
+  Kout  = 0.138600 h⁻¹     (FIXED — literature EPO T½=5h)
+  T½EPO = 5.00 h
+  IC50  = 0.475676 µg/mL   (95% CI: not estimated — sparse data)
+  Weighted SSR = 88.5030
+  N observations used = 17
+  N observations excluded = 1  (200 mg, Day 8 — anomalous)
+══════════════════════════════════════════════
+  IMPORTANT LIMITATIONS:
+  1. Only 3 timepoints per dose group — parameters are weakly identified
+  2. IC50 and Kout are correlated — confidence intervals require bootstrap
+  3. Digitization error ±5 pct points on mean values
+  4. Hill coefficient fixed at 1.0 — not estimated from data
+  5. 200 mg Day 8 excluded — results sensitive to this exclusion
+══════════════════════════════════════════════
