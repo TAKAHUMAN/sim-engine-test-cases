@@ -1,0 +1,35 @@
+Adult RCC responder/resistant mixture refinement
+
+Responder fraction pi: 0.35 (observed simulated 0.35)
+lambda_kill_0 median for responders: 0.0150 /day
+tau_resist for responders: 69.0 days
+Resistant branch: drug-independent growth, PFS = ln(1.20) / lambda_growth
+Tail effect: 6-month PFS 10.0%, 12-month PFS 3.8%
+
+Adult RCC PK-PD validation
+
+Median PFS: 1.05 months
+Mean PFS: 2.27 months
+SD PFS: 2.84 months
+6-month PFS probability: 10.0%
+12-month PFS probability: 3.8%
+Median steady-state S6K1 inhibition: 80.0%
+Kaplan-Meier plot: outputs\pd_mixture_pi035_pfs_validation.png
+
+                                        target  simulated      reference status
+                 Median PFS within RECORD-1 CI   1.047521 4.0-5.5 months   FAIL
+6-month PFS probability within +/-15% relative   0.100000    0.221-0.299   FAIL
+  12-month PFS probability approximately 5-10%   0.038000      0.05-0.10   FAIL
+     Median steady-state S6K1 inhibition >=80%   0.799933         >=0.80   FAIL
+
+Supervisor summary:
+                     metric    status                                interpretation
+Median PFS primary endpoint      FAIL                Median outside RECORD-1 target
+           6-month PFS tail      FAIL Current structure misses resistance or escape
+          12-month PFS tail      FAIL Current structure misses long-term resistance
+     S6K1 target engagement NEAR PASS               Drug reaches target as expected
+           Code and linkage      PASS       Audited PK to biomarker to PFS workflow
+
+Model refinement status:
+Acquired resistance corrects the long-term PFS tail, but median PFS is outside the RECORD-1 validation band.
+Next step: jointly calibrate lambda_kill_0 and tau_resist, or move to the responder/resistant mixture model.
