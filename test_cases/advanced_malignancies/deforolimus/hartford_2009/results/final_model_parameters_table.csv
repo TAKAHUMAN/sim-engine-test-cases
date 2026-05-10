@@ -1,0 +1,12 @@
+model,parameter,value,unit,note
+PK,CL(dose),5.056 * (dose/50)^0.579,L/h,Power fit to NCA CL values
+PK,Vss(dose),242.0 * (dose/50)^0.628,L,Power fit to NCA Vss values
+PK,Q,9.609,L/h,"Fitted with Cmax, AUC, and t1/2 objective"
+PK,frac_V1,0.231,fraction,Central fraction of Vss
+PK,V1(50 mg),55.8,L,Derived from Vss and frac_V1
+PK,V2(50 mg),186.2,L,Derived from Vss and frac_V1
+PD,ke0,0.0524,h^-1,Fixed-Imax final set; t1/2=13.2 h
+PD,IC50,0.00470,ug/mL,4.7 ng/mL
+PD,Imax,1.0,fraction,Fixed for biological interpretability
+TGI,kg,0.0050,h^-1,"Assumed, not fitted"
+TGI,kd_base,3.1216,h^-1 per ug/mL,Selected from stochastic variability scan

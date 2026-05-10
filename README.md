@@ -30,6 +30,7 @@ test_cases/
 | RCC | Cediranib | PK: Li et al. 2017 (PMCID: PMC5510068); PD: biomarker source (PMID: 20044618) | Complete |
 | RCC | Dovitinib | Escudier et al. 2014 (PMID: 24691021; no PMCID found) | Complete |
 | RCC | Foretinib | Clinical/PD: Choueiri 2012; PK: Eder 2010 | Complete |
+| Advanced malignancies | Deforolimus | Hartford et al. 2009 (DOI: 10.1158/1078-0432.CCR-08-2076) | Complete |
 
 ## Adding a New Test Case
 
@@ -51,3 +52,5 @@ test_cases/
   - Cediranib PK/PD - PK source: Li et al. 2017 population PK (PMCID: PMC5510068); PD source: VEGFR-2/sVEGFR-2 biomarker literature (PMID: 20044618)
   - Dovitinib aggregate PK/PD - Escudier et al. 2014 metastatic RCC Phase II study (PMID: 24691021; no PMCID found)
   - Foretinib PK/PD - Clinical/PD source: Choueiri et al. 2012 PRCC phase II; PK source: Eder et al. 2010 phase I
+- Advanced malignancies: 1 model
+  - Deforolimus PK/PD - Hartford et al. 2009 phase I weekly IV study in patients with advanced malignancies
