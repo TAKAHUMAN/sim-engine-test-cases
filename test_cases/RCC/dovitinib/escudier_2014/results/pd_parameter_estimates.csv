@@ -1,0 +1,25 @@
+marker,parameter,estimate,unit,estimation_note
+sVEGFR1,emax,1.135158090527561,fraction,Aggregate PD calibration; sparse summary data do not support IIV estimation
+sVEGFR1,ec50_ng_ml,491.9757752921185,ng/mL,Aggregate PD calibration; sparse summary data do not support IIV estimation
+sVEGFR1,kout_h,0.034616891155380844,1/h,Aggregate PD calibration; sparse summary data do not support IIV estimation
+sVEGFR1,escape_max,0.0,fraction,Aggregate PD calibration; sparse summary data do not support IIV estimation
+sVEGFR1,escape_k_h,0.0,1/h,Aggregate PD calibration; sparse summary data do not support IIV estimation
+sVEGFR1,baseline,100.0,baseline unit,Aggregate PD calibration; sparse summary data do not support IIV estimation
+sVEGFR2,emax,1.0085560042937218,fraction,Aggregate PD calibration; sparse summary data do not support IIV estimation
+sVEGFR2,ec50_ng_ml,187.81719078730598,ng/mL,Aggregate PD calibration; sparse summary data do not support IIV estimation
+sVEGFR2,kout_h,0.01736717382034416,1/h,Aggregate PD calibration; sparse summary data do not support IIV estimation
+sVEGFR2,escape_max,0.4208729848548766,fraction,Aggregate PD calibration; sparse summary data do not support IIV estimation
+sVEGFR2,escape_k_h,0.0016411941178425841,1/h,Aggregate PD calibration; sparse summary data do not support IIV estimation
+sVEGFR2,baseline,100.0,baseline unit,Aggregate PD calibration; sparse summary data do not support IIV estimation
+FGF23,emax,2.2360559568205667,fraction,Aggregate PD calibration; sparse summary data do not support IIV estimation
+FGF23,ec50_ng_ml,200.0,ng/mL,Aggregate PD calibration; sparse summary data do not support IIV estimation
+FGF23,kout_h,0.02,1/h,Aggregate PD calibration; sparse summary data do not support IIV estimation
+FGF23,escape_max,0.0,fraction,Aggregate PD calibration; sparse summary data do not support IIV estimation
+FGF23,escape_k_h,0.0,1/h,Aggregate PD calibration; sparse summary data do not support IIV estimation
+FGF23,baseline,140.7,baseline unit,Aggregate PD calibration; sparse summary data do not support IIV estimation
+VEGF,emax,0.49689105849764315,fraction,Aggregate PD calibration; sparse summary data do not support IIV estimation
+VEGF,ec50_ng_ml,200.0,ng/mL,Aggregate PD calibration; sparse summary data do not support IIV estimation
+VEGF,kout_h,0.02,1/h,Aggregate PD calibration; sparse summary data do not support IIV estimation
+VEGF,escape_max,0.0,fraction,Aggregate PD calibration; sparse summary data do not support IIV estimation
+VEGF,escape_k_h,0.0,1/h,Aggregate PD calibration; sparse summary data do not support IIV estimation
+VEGF,baseline,100.0,baseline unit,Aggregate PD calibration; sparse summary data do not support IIV estimation

@@ -1,0 +1,9 @@
+occasion,day,time_window_h,metric,value,unit,n,source_note
+day1,1,0-24,Cmax,326.3,ng/mL,65,"Escudier et al. 2014 summary"
+day1,1,0-24,Tmax,6,h,65,"Median Tmax"
+day1,1,0-24,AUC,5576.4,h*ng/mL,65,"Reported AUC"
+day1,1,10-24,Half_life,24,h,65,"Approximate reported half-life"
+day15,15,0-24,Cmax,263.5,ng/mL,65,"Escudier et al. 2014 summary"
+day15,15,0-24,Tmax,6,h,65,"Median Tmax"
+day15,15,0-24,AUC,3933.3,h*ng/mL,65,"Reported AUC"
+day15,15,10-24,Half_life,11,h,65,"Approximate reported half-life"

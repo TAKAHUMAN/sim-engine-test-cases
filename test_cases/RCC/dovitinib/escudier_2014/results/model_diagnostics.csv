@@ -1,0 +1,7 @@
+metric,value
+ofv,1.2698084063627606
+optimizer_cost,0.6349042031813803
+optimizer_success,True
+optimizer_message,Both `ftol` and `xtol` termination conditions are satisfied.
+n_aggregate_targets,8
+raw_data_limitation,"Published aggregate summaries only; individual likelihood, empirical Bayes ETAs, and shrinkage cannot be estimated directly"

@@ -1,0 +1,5 @@
+covariate,implemented_as,model_effect
+baseline_vegfr_inhibitor,Pseudo-population indicator; 49/65 set to previously treated,Recorded for stratification; PK effect not estimated from aggregate summaries
+prior_count_group,Pseudo-population indicator; 82.1% assigned >=2 prior regimens,Recorded for stratification; PK effect not estimated from aggregate summaries
+body_weight_kg,Pseudo-population continuous covariate,Vc and Vp scaled by WT/70
+creatinine_clearance_ml_min,Pseudo-population continuous covariate,Recorded for assessment; clearance effect not estimated without raw renal function data

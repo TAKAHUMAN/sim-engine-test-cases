@@ -1,0 +1,10 @@
+parameter,estimate,unit,ci_low_95,ci_high_95,iiv_cv_percent,estimation_note
+ka_h,0.23882547968787915,1/h,0.06599002962516018,0.8643367804520382,30.0,IIV fixed at 30% CV because raw individual PK data are unavailable
+vc_l,711.1877575282114,L,12.717930104201361,39769.68125425687,30.0,IIV fixed at 30% CV because raw individual PK data are unavailable
+q_l_h,117.42528419587131,L/h,28.90285055277613,477.0705001329613,30.0,IIV fixed at 30% CV because raw individual PK data are unavailable
+vp_l,1353.9865097681518,L,0.03404158626152932,53854114.0400953,30.0,IIV fixed at 30% CV because raw individual PK data are unavailable
+cl_day1_l_h,13.710339557220614,L/h,2.1777251349931222e-18,8.631640777516304e+19,30.0,IIV fixed at 30% CV because raw individual PK data are unavailable
+cl_day15_l_h,148.44382431744918,L/h,68.37995104263516,8.631640777516304e+19,30.0,IIV fixed at 30% CV because raw individual PK data are unavailable
+kaut_h,0.0029333949176054705,1/h,1.1072363725716425e-08,777.1426188473447,30.0,IIV fixed at 30% CV because raw individual PK data are unavailable
+km_mg_l,3.6499579339979316,mg/L,2.400141396780545e-07,55505867.020269364,30.0,IIV fixed at 30% CV because raw individual PK data are unavailable
+bioavailability,1.0,fraction,1.0,1.0,,Fixed; absolute oral bioavailability is not identifiable from summary oral data

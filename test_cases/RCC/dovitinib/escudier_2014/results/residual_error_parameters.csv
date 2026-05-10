@@ -1,0 +1,3 @@
+parameter,estimate,unit,note
+proportional_error,0.2,fraction,Assumed for pseudo-observation diagnostics; replace when raw data are available
+additive_error,5.0,ng/mL,Assumed for pseudo-observation diagnostics; replace when raw data are available

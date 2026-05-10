@@ -28,6 +28,7 @@ test_cases/
 | RCC | Sorafenib | PK: Jain 2011 (PMCID: PMC3162659); PD: Wilhelm 2008 (PMCID: PMC12261297) | Complete |
 | RCC | Lenvatinib | Majid et al. 2024 (PMCID: PMC11179699, RCC covariate) | Complete |
 | RCC | Cediranib | PK: Li et al. 2017 (PMCID: PMC5510068); PD: biomarker source (PMID: 20044618) | Complete |
+| RCC | Dovitinib | Escudier et al. 2014 (PMID: 24691021; no PMCID found) | Complete |
 
 ## Adding a New Test Case
 
@@ -38,7 +39,7 @@ test_cases/
 
 ## Current Coverage
 
-- RCC (Renal Cell Carcinoma): 8 models
+- RCC (Renal Cell Carcinoma): 9 models
   - Sunitinib PK/PD - Khosravan et al., Clin Pharmacokinet 2016;55:1251-1269 (PMCID: PMC5526090)
   - Sunitinib PK/PD - Diekstra et al. 2017 (PMCID: PMC5613186)
   - Axitinib PK/PD chain - PK source: Rini et al. 2013; PD source: Schindler et al. 2017 (PMCID: PMC5488123)
@@ -47,3 +48,4 @@ test_cases/
   - Sorafenib PK/PD - PK source: Jain et al. 2011 (*Br J Clin Pharmacol*, PMCID: PMC3162659); PD source: Wilhelm et al. 2008 RCC xenograft PD (*Mol Cancer Ther*, PMCID: PMC12261297)
   - Lenvatinib integrated PK/biomarker/TGI - Majid et al. 2024 (CL/F x 0.851 for RCC, PMCID: PMC11179699)
   - Cediranib PK/PD - PK source: Li et al. 2017 population PK (PMCID: PMC5510068); PD source: VEGFR-2/sVEGFR-2 biomarker literature (PMID: 20044618)
+  - Dovitinib aggregate PK/PD - Escudier et al. 2014 metastatic RCC Phase II study (PMID: 24691021; no PMCID found)
