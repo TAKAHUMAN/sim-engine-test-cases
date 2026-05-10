@@ -1,0 +1,5 @@
+Endpoint,Paper Target,Iter 1 Simulated,Iter 2 Simulated,Error Iter 1 (%),Error Iter 2 (%),Status
+Median PFS (months),9.3,9.85,8.566582812363974,5.9139784946236436,7.8862063186669555,CHECK
+ORR (%),13.5,14.2,11.15,5.18518518518518,17.407407407407405,CHECK
+1-yr OS (%),70.0,67.2,63.74999999999999,3.999999999999996,8.928571428571438,CHECK
+SS timing (days),day 8 / day 28,day 8 / day 28,day 8 / day 28,,,PASS

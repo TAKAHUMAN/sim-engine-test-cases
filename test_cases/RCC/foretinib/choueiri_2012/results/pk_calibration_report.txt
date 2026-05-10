@@ -1,0 +1,51 @@
+================================================================================
+FORETINIB PKPD MODEL - PK CALIBRATION REPORT
+================================================================================
+
+DATE: 2026-05-10
+MODEL VERSION: 2.0 (Iteration 2)
+
+1. PARAMETER SOURCES
+================================================================================
+Primary source: Eder JP et al. Clin Cancer Res. 2010;16(13):3507-3516.
+Population: Advanced solid tumors; MTD cohort 3.6 mg/kg (median 240 mg), n=14 day1, n=13 day8.
+Published PK anchors used: Cmax, Tmax, AUC0-24, t1/2 at MTD.
+
+2. VALIDATION AGAINST PUBLISHED DATA
+================================================================================
+                                                 metric   simulated  published_or_proxy  error_pct status
+                       240 mg daily - Cmax day1 (ng/mL)  210.276933           90.500000 132.350202  CHECK
+                       240 mg daily - Cmax day8 (ng/mL)  221.376435          218.000000   1.548823   PASS
+                  240 mg daily - AUC0-24 day1 (ng*h/mL) 3938.469978         1300.000000 202.959229  CHECK
+                  240 mg daily - AUC0-24 day8 (ng*h/mL) 4244.280366         4050.000000   4.797046   PASS
+                           240 mg daily - Tmax day1 (h)    4.500000            5.010000  10.179641   PASS
+                           240 mg daily - Tmax day8 (h)    3.500000            3.760000   6.914894   PASS
+                                    Model half-life (h)   40.425000           40.500000   0.185185   PASS
+     80 mg daily - Cmax day8 (ng/mL, dose-proportional)   73.792145           72.666667   1.548823   PASS
+80 mg daily - AUC0-24 day8 (ng*h/mL, dose-proportional) 1414.760122         1350.000000   4.797046   PASS
+
+3. MODEL ASSUMPTIONS
+================================================================================
+- Linear PK (no saturation), no time-dependent clearance.
+- Two-compartment oral PK with first-pass bioavailability term.
+- 80 mg daily targets derived using published dose proportionality.
+- Concentration range constrained to assay linearity context (0.5-500 ng/mL).
+
+4. KNOWN LIMITATIONS
+================================================================================
+- Published CL/F and Vd/F were not directly available from open-access text.
+- Day 8 accumulation in phase I source is not perfectly reproduced by a fixed-parameter model.
+- Some references for 80 mg daily are dose-proportional extrapolations, not direct measurements.
+
+5. IMPACT ON CLINICAL OUTCOMES
+================================================================================
+Before PK update: Median PFS = 9.85 mo, ORR = 14.2%, 1-yr OS = 67.2%
+After PK update : Median PFS = 8.57 mo, ORR = 11.2%, 1-yr OS = 63.7%
+Paper target    : Median PFS = 9.3 mo, ORR = 13.5%, 1-yr OS = 70.0%
+
+Steady-state timing summary:
+cohort  steady_state_day
+     A              28.0
+     B               8.0
+
+================================================================================

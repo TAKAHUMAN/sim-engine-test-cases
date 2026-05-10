@@ -1,0 +1,8 @@
+Parameter,Estimate,Unit,Source,Reference
+Ka,0.75,h^-1,Calibrated to Eder 2010 Tmax/Cmax pattern,Clin Cancer Res 2010;16:3507-3516
+CL/F,24.0,L/h,Calibrated to Eder 2010 + concentration range constraints,Clin Cancer Res 2010;16:3507-3516
+Vc,900.0,L,Calibrated to half-life target from Eder 2010,Clin Cancer Res 2010;16:3507-3516
+Vp,500.0,L,Calibrated to half-life target from Eder 2010,Clin Cancer Res 2010;16:3507-3516
+Q,2.5,L/h,Calibrated (2-compartment distribution fit),Modeling assumption
+F,0.45,fraction,Assumed then calibrated against exposure targets,Modeling assumption
+IIV (CV%),30.0,%,Assumed standard pop-PK variability,Standard practice
